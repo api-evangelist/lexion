@@ -1,0 +1,9 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Lexion API",
+    "version": "0.0.0",
+    "description": "Lexion is an AI-powered contract lifecycle management (CLM) platform. Lexion advertises a custom, enterprise integration API (https://www.lexion.ai/integrations/api) but does not publish a self-serve, openly documented public API: there is no published base URL, authentication scheme, or endpoint reference. Lexion was acquired by Docusign in May 2024 and is being folded into Docusign Intelligent Agreement Management (IAM). This collection intentionally contains no items because no public endpoints are documented; none were fabricated."
+  },
+  "items": []
+}

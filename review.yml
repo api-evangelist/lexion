@@ -1,0 +1,79 @@
+aid: lexion
+name: Lexion
+review:
+  question: Does Lexion expose a documented, self-serve public API?
+  answer: false
+  date: '2026-06-21'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Lexion does not publish a self-serve, openly documented public API. Lexion
+    advertises a custom integration API to push contract terms and metadata into
+    external business systems (e.g. NetSuite, Coupa) at
+    https://www.lexion.ai/integrations/api, but that page is a sales/marketing
+    surface that directs interested parties to "Contact Us." There is no public
+    REST reference, no published base URL, no documented authentication scheme,
+    and no endpoint catalog. The API is an enterprise, sales-led offering bundled
+    into enterprise agreements rather than a developer self-serve product.
+
+    Lexion was acquired by Docusign in May 2024 for approximately $165M (announced
+    2024-05-06; completed shortly after) and is being folded into Docusign's
+    Intelligent Agreement Management (IAM) platform and Docusign Navigator. As a
+    result, net-new programmatic/developer surface is increasingly delivered
+    through the Docusign developer platform rather than a standalone Lexion API.
+  acquisition:
+    acquirer: Docusign
+    announcedDate: '2024-05-06'
+    approxPrice: $165M USD
+    foldedInto:
+    - Docusign Intelligent Agreement Management (IAM)
+    - Docusign Navigator
+    note: >-
+      Lexion was founded in 2019 out of the Allen Institute for AI (Seattle).
+      Post-acquisition the standalone Lexion brand persists for existing
+      customers while capabilities migrate into Docusign IAM.
+  apiSurface:
+    publicSelfServeApi: false
+    enterpriseIntegrationApi: true
+    publishedBaseURL: false
+    publishedAuth: false
+    publishedEndpointReference: false
+    note: >-
+      The OpenAPI artifact (openapi/lexion-openapi.yml) intentionally carries an
+      empty paths object because no public endpoints are documented; no endpoints
+      were fabricated.
+  productSurfaces:
+  - name: Contract Repository
+    note: Intelligent, centralized agreement repository with key terms/dates.
+  - name: Extraction & Insights
+    note: AI extraction of clauses/terms/renewals plus AI Contract Assist.
+  - name: Workflows
+    note: No-code intake, approval, document generation, and routing.
+  - name: Integrations
+    note: >-
+      Pre-built connectors (Email, Word, Salesforce, HubSpot, Slack, Teams,
+      Coupa, NetSuite, DocuSign) plus a custom, sales-led integration API.
+sources:
+- url: https://www.lexion.ai
+  type: Website
+  note: Homepage announces "Lexion joins forces with Docusign"; lists products.
+- url: https://www.lexion.ai/integrations/api
+  type: Documentation
+  note: Marketing page for the integration API; sales-led, no public endpoint reference.
+- url: https://www.docusign.com/blog/lexion-acquisition-intelligent-agreement-management
+  type: Press
+  note: Docusign announcement of the Lexion acquisition and IAM integration.
+- url: https://techcrunch.com/2024/05/06/docusign-acquires-ai-powered-contract-management-firm-lexion/
+  type: Press
+  note: Coverage of the ~$165M acquisition (2024-05-06).
+actions:
+  openapiPath: openapi/lexion-openapi.yml
+  apisYmlUpdated: true
+  reason: |
+    No public, self-serve API surface exists to model. The catalog documents
+    Lexion's product surfaces and integration API honestly, with an empty
+    OpenAPI paths object and an explicit acquisition note. Pricing is sales-led
+    and recorded as reconciled:false.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

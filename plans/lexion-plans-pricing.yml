@@ -1,0 +1,72 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Lexion
+providerId: lexion
+created: '2026-06-21'
+modified: '2026-06-21'
+reconciled: false
+tags:
+- Contract Management
+- CLM
+- AI
+- Legal Tech
+- Plans
+description: >-
+  Lexion uses a sales-led, custom-quote pricing model with no publicly listed
+  rate card. Pricing is personalized based on number of users (full-license
+  core users vs. read-only/limited users), annual contract volume, workflow
+  complexity, and feature set / AI usage. Implementation and onboarding are
+  typically billed separately. There is no self-serve, usage-metered public API
+  pricing; the integration API is provided as part of enterprise agreements.
+  Lexion was acquired by Docusign in May 2024 and is being folded into Docusign
+  Intelligent Agreement Management (IAM), so commercial terms increasingly flow
+  through Docusign.
+notes: >-
+  All figures are sales-led and not published on a public price list. The
+  implementation range below is sourced from third-party buyer guides, not from
+  Lexion's own site, and is unreconciled. Verify current pricing directly with
+  Lexion / Docusign sales during reconciliation.
+sources:
+- https://www.lexion.ai
+- https://www.lexion.ai/request-demo
+- https://www.docusign.com/blog/lexion-acquisition-intelligent-agreement-management
+plans:
+- id: lexion-platform
+  name: Lexion Platform (Custom Quote)
+  type: enterprise
+  description: >-
+    Subscription to the Lexion CLM platform (Repository, Extraction & Insights,
+    Workflows, Integrations, AI Contract Assist), priced per custom quote based
+    on users, contract volume, and features. Contact sales for a proposal.
+  entries:
+  - label: Platform Subscription
+    name: platform_subscription
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: contact sales
+    userMultiplied: true
+  - label: Implementation & Onboarding
+    name: implementation
+    type: flat
+    metric: project
+    limit: -1
+    timeFrame: onetime
+    geo: global
+    unit: 1
+    price: typically $5,000-$25,000+ (third-party estimate, unreconciled)
+    userMultiplied: false
+  elements:
+  - name: Contract Repository
+  - name: Extraction & Insights
+  - name: Workflows
+  - name: Integrations
+  - name: AI Contract Assist
+  - name: Integration API (enterprise, sales-led)
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

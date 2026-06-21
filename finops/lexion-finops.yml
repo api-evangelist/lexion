@@ -1,0 +1,95 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Lexion
+providerId: lexion
+created: '2026-06-21'
+modified: '2026-06-21'
+reconciled: false
+tags:
+- Contract Management
+- CLM
+- AI
+- Legal Tech
+- FinOps
+- Cost Management
+description: >-
+  FinOps view of Lexion spend. Lexion is sold as a sales-led enterprise SaaS
+  subscription (custom quote) rather than a usage-metered, self-serve API
+  product, so there are no per-token, per-call, or per-request public meters to
+  optimize. Cost drivers are seat/user counts, annual contract volume, workflow
+  complexity, feature/AI tier, and one-time implementation. Lexion was acquired
+  by Docusign in May 2024 and is being folded into Docusign Intelligent
+  Agreement Management (IAM), so spend increasingly consolidates under Docusign.
+notes: >-
+  No public usage-based API billing exists. Meters below are subscription cost
+  drivers, not metered API charges, and are unreconciled. Verify against the
+  Lexion / Docusign enterprise agreement during reconciliation.
+sources:
+- https://www.lexion.ai
+- https://www.lexion.ai/request-demo
+- https://www.docusign.com/blog/lexion-acquisition-intelligent-agreement-management
+- https://focus.finops.org/focus-specification/v1-3/
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: Lexion
+serviceCategory: Software as a Service
+billingModel:
+  pricingCategory: Subscription
+  billingFrequency: Annual
+  billingCurrency: USD
+  chargeCategories:
+  - Purchase
+  - Adjustment
+focusColumns:
+  ServiceName: Lexion CLM
+  ServiceCategory: Software as a Service
+  ProviderName: Lexion
+  PublisherName: Lexion (Docusign)
+  InvoiceIssuerName: Docusign
+  BillingCurrency: USD
+  ChargeCategory: Purchase
+  PricingCategory: Subscription
+meters:
+- name: platform_users
+  description: Full-license core users (legal, procurement, finance) on the platform.
+  unit: users
+  aggregation: max
+  dimensions:
+  - account
+- name: annual_contract_volume
+  description: Contracts managed / processed / analyzed per year, a pricing driver.
+  unit: contracts
+  aggregation: sum
+  dimensions:
+  - account
+- name: implementation
+  description: One-time implementation and onboarding fee.
+  unit: project
+  aggregation: sum
+  dimensions:
+  - account
+principles:
+- name: Visibility
+  description: >-
+    Track seat counts and annual contract volume against the negotiated
+    enterprise agreement; there is no per-call API spend to monitor.
+- name: Allocation
+  description: >-
+    Allocate the subscription across the legal, sales, procurement, finance, and
+    HR teams that use Lexion.
+- name: Optimization
+  description: >-
+    Optimize seat counts and tier selection at renewal; consolidate with
+    Docusign IAM spend where applicable post-acquisition.
+- name: Accountability
+  description: >-
+    Assign a contract/vendor owner; review renewal increases (typically 3-7%
+    per third-party guides) before each term.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

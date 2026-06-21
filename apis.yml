@@ -1,0 +1,108 @@
+aid: lexion
+url: https://raw.githubusercontent.com/api-evangelist/lexion/refs/heads/main/apis.yml
+name: Lexion
+kind: company
+description: Lexion is an AI-powered contract lifecycle management (CLM) platform that
+  centralizes agreements in an intelligent repository, extracts key terms and dates,
+  and drives no-code intake and approval workflows across legal, sales, procurement,
+  finance, and HR. Founded in 2019 out of the Allen Institute for AI, Lexion was acquired
+  by Docusign in May 2024 for ~$165M and folded into Docusign's Intelligent Agreement
+  Management (IAM) platform and Docusign Navigator. Lexion exposes an enterprise,
+  sales-led integration API but does not publish a self-serve, openly documented public
+  API.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Contract Management
+- CLM
+- AI
+- Legal Tech
+- Document Extraction
+- Workflow
+created: '2026-06-21'
+modified: '2026-06-21'
+specificationVersion: '0.19'
+apis:
+- aid: lexion:contract-repository
+  name: Lexion Contract Repository
+  tags:
+  - Contracts
+  - Repository
+  - Metadata
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.lexion.ai/integrations/api
+  properties:
+  - url: https://www.lexion.ai/integrations/api
+    type: Documentation
+  - url: openapi/lexion-openapi.yml
+    type: OpenAPI
+  description: Centralized intelligent repository for agreements, surfacing contracts,
+    parties, key dates, and metadata. Lexion offers an enterprise integration API to
+    push contract terms and metadata into external systems, but no self-serve public
+    REST reference, base URL, or endpoint catalog is published; access is sales-led.
+- aid: lexion:extraction-insights
+  name: Lexion Extraction & Insights
+  tags:
+  - AI
+  - Extraction
+  - Insights
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.lexion.ai/integrations/api
+  properties:
+  - url: https://www.lexion.ai/integrations/api
+    type: Documentation
+  - url: openapi/lexion-openapi.yml
+    type: OpenAPI
+  description: AI-based extraction of clauses, key terms, renewal dates, and contract
+    insights, plus AI Contract Assist for review against playbooks. Surfaced through
+    the Lexion product and its enterprise integration API; no openly documented public
+    extraction endpoints are published.
+- aid: lexion:workflows
+  name: Lexion Workflows
+  tags:
+  - Workflow
+  - Intake
+  - Automation
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.lexion.ai/integrations/api
+  properties:
+  - url: https://www.lexion.ai/integrations/api
+    type: Documentation
+  - url: openapi/lexion-openapi.yml
+    type: OpenAPI
+  description: No-code intake, approval, document-generation, and routing workflows,
+    with email-, Slack-, and Microsoft Teams-driven request submission. Workflow
+    automation is configured in-product; no openly documented public workflow API
+    surface is published.
+- aid: lexion:integrations
+  name: Lexion Integrations
+  tags:
+  - Integrations
+  - Salesforce
+  - DocuSign
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.lexion.ai/integrations/api
+  properties:
+  - url: https://www.lexion.ai/integrations/api
+    type: Documentation
+  - url: openapi/lexion-openapi.yml
+    type: OpenAPI
+  description: Pre-built connectors for Email, Microsoft Word, Salesforce, HubSpot,
+    Slack, Microsoft Teams, Coupa, NetSuite, and DocuSign, plus a custom integration
+    API for connecting Lexion to other business systems. The custom API is enterprise
+    and sales-led, without a published self-serve developer reference.
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/lexion
+- type: Website
+  url: https://www.lexion.ai
+- type: Documentation
+  url: https://www.lexion.ai/integrations/api
+- type: Plans
+  url: plans/lexion-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/lexion-rate-limits.yml
+- type: FinOps
+  url: finops/lexion-finops.yml
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
