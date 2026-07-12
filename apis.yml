@@ -91,12 +91,18 @@ apis:
     API for connecting Lexion to other business systems. The custom API is enterprise
     and sales-led, without a published self-serve developer reference.
 common:
+- type: TrustCenter
+  url: security/lexion-trust-center.yml
+- type: DomainSecurity
+  url: security/lexion-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/lexion
 - type: Website
   url: https://www.lexion.ai
 - type: Documentation
   url: https://www.lexion.ai/integrations/api
+- type: Blog
+  url: https://www.lexion.ai/blog
 - type: Plans
   url: plans/lexion-plans-pricing.yml
 - type: RateLimits
