@@ -1,0 +1,14 @@
+{
+  "provider": "lexion",
+  "sources": [
+    "lexion-openapi.yml"
+  ],
+  "outputs": [],
+  "archived": [
+    "archived lexion-openapi.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
