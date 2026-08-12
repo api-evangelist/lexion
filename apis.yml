@@ -45,7 +45,7 @@ apis:
   properties:
   - url: https://www.lexion.ai/integrations/api
     type: Documentation
-  - url: openapi/lexion-openapi.yml
+  - url: openapi/_original/lexion-openapi.yml
     type: OpenAPI
   description: Centralized intelligent repository for agreements, surfacing contracts,
     parties, key dates, and metadata. Lexion offers an enterprise integration API to
@@ -62,7 +62,7 @@ apis:
   properties:
   - url: https://www.lexion.ai/integrations/api
     type: Documentation
-  - url: openapi/lexion-openapi.yml
+  - url: openapi/_original/lexion-openapi.yml
     type: OpenAPI
   description: AI-based extraction of clauses, key terms, renewal dates, and contract
     insights, plus AI Contract Assist for review against playbooks. Surfaced through
@@ -79,7 +79,7 @@ apis:
   properties:
   - url: https://www.lexion.ai/integrations/api
     type: Documentation
-  - url: openapi/lexion-openapi.yml
+  - url: openapi/_original/lexion-openapi.yml
     type: OpenAPI
   description: No-code intake, approval, document-generation, and routing workflows,
     with email-, Slack-, and Microsoft Teams-driven request submission. Workflow
@@ -96,7 +96,7 @@ apis:
   properties:
   - url: https://www.lexion.ai/integrations/api
     type: Documentation
-  - url: openapi/lexion-openapi.yml
+  - url: openapi/_original/lexion-openapi.yml
     type: OpenAPI
   description: Pre-built connectors for Email, Microsoft Word, Salesforce, HubSpot,
     Slack, Microsoft Teams, Coupa, NetSuite, and DocuSign, plus a custom integration
