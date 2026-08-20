@@ -26,6 +26,13 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lexion.png
 tags:
 - Contract Management
 - CLM
+- Artificial Intelligence
+- Legal Tech
+- Document Extraction
+- Workflows
+tags_raw:
+- Contract Management
+- CLM
 - AI
 - Legal Tech
 - Document Extraction
@@ -54,6 +61,10 @@ apis:
 - aid: lexion:extraction-insights
   name: Lexion Extraction & Insights
   tags:
+  - Artificial Intelligence
+  - Extraction
+  - Insights
+  tags_raw:
   - AI
   - Extraction
   - Insights
@@ -71,6 +82,10 @@ apis:
 - aid: lexion:workflows
   name: Lexion Workflows
   tags:
+  - Workflows
+  - Intake
+  - Automation
+  tags_raw:
   - Workflow
   - Intake
   - Automation
@@ -88,6 +103,10 @@ apis:
 - aid: lexion:integrations
   name: Lexion Integrations
   tags:
+  - Integration
+  - Salesforce
+  - DocuSign
+  tags_raw:
   - Integrations
   - Salesforce
   - DocuSign
