@@ -10,6 +10,17 @@ description: Lexion is an AI-powered contract lifecycle management (CLM) platfor
   Management (IAM) platform and Docusign Navigator. Lexion exposes an enterprise,
   sales-led integration API but does not publish a self-serve, openly documented public
   API.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: paid
   onboarding: unknown
