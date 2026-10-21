@@ -3,6 +3,7 @@ method: searched
 checked:
 - microsoft-teams/integrations/microsoft-teams-integration-edges.yml
 - okta/integrations/okta-integration-edges.yml
+- hubspot/integrations/hubspot-integration-edges.yml
 source:
 - okta/integrations/okta-integration-edges.yml
 edges:
@@ -46,3 +47,20 @@ edges:
   category: Microsoft Teams app
   publisher_verified:
   - Microsoft 365 Certified
+- partner_name: HubSpot (own)
+  partner: hubspot
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://ecosystem.hubspot.com/marketplace/listing/lexion-1127661
+  mirror_of: hubspot/integrations/hubspot-integration-edges.yml
+  apps:
+  - Lexion
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: SALES_ENABLEMENT
