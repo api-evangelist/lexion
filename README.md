@@ -1,4 +1,4 @@
-# Lexion (lexion)
+# Lexion
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,114 +66,111 @@
 
 Lexion is an AI-powered contract lifecycle management (CLM) platform that centralizes agreements in an intelligent repository, extracts key terms and dates, and drives no-code intake and approval workflows across legal, sales, procurement, finance, and HR. Founded in 2019 out of the Allen Institute for AI, Lexion was acquired by Docusign in May 2024 for ~$165M and folded into Docusign's Intelligent Agreement Management (IAM) platform and Docusign Navigator. Lexion exposes an enterprise, sales-led integration API but does not publish a self-serve, openly documented public API.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/lexion/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/lexion/refs/heads/main/apis.yml)
+**Areas:** Contract Management · Contract Lifecycle Management · Artificial Intelligence · Legal Tech · Document Extraction · Workflows
 
-## API Availability
+## Lexion on APIs.io
 
-Lexion advertises a custom integration **API** to push contract terms and metadata into external systems (NetSuite, Coupa, and others), but it is an **enterprise, sales-led** offering. As of this writing there is **no self-serve, openly documented public REST API** — no published base URL, authentication scheme, or endpoint reference. Lexion was **acquired by Docusign in May 2024** (~$165M) and is being folded into Docusign's Intelligent Agreement Management (IAM) platform and Docusign Navigator; net-new developer/API surface is increasingly delivered through Docusign's developer platform. This catalog documents Lexion's product surfaces honestly; the OpenAPI artifact intentionally carries an empty `paths: {}` because no public endpoints are documented.
+Everything profiled for Lexion is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lexion/](https://apis.io/providers/lexion/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (4)
 
-- Contract Management
-- CLM
-- AI
-- Legal Tech
-- Document Extraction
-- Workflow
+- [Lexion Contract Repository](https://apis.io/apis/lexion/contract-repository/) — Centralized intelligent repository for agreements, surfacing contracts, parties, key dates, and metadata. Lexion offers an enterprise integration API to…
+- [Lexion Extraction & Insights](https://apis.io/apis/lexion/extraction-insights/) — AI-based extraction of clauses, key terms, renewal dates, and contract insights, plus AI Contract Assist for review against playbooks. Surfaced through the…
+- [Lexion Workflows](https://apis.io/apis/lexion/workflows/) — No-code intake, approval, document-generation, and routing workflows, with email-, Slack-, and Microsoft Teams-driven request submission. Workflow…
+- [Lexion Integrations](https://apis.io/apis/lexion/integrations/) — Pre-built connectors for Email, Microsoft Word, Salesforce, HubSpot, Slack, Microsoft Teams, Coupa, NetSuite, and DocuSign, plus a custom integration API…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-06-21
-- **Modified:** 2026-06-21
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Collections (1)
 
-### Lexion Contract Repository
+Postman and Open Collection request collections.
 
-Centralized intelligent repository for agreements, surfacing contracts, parties, key dates, and metadata. Lexion offers an enterprise integration API to push contract terms and metadata into external systems, but no self-serve public REST reference, base URL, or endpoint catalog is published; access is sales-led.
+- [Lexion API](https://apis.io/collections/lexion/open-lexion/)
 
-- **Human URL:** [https://www.lexion.ai/integrations/api](https://www.lexion.ai/integrations/api)
+#### Security (2)
 
-#### Tags
+Authentication, trust centre, and vulnerability disclosure.
 
-- Contracts
-- Repository
-- Metadata
+- [Lexion Domain Security](https://apis.io/security/lexion/lexion-domain-security/)
+- [Lexion Trust Center](https://apis.io/security/lexion/lexion-trust-center/)
 
-#### Properties
+#### Plans and pricing (1)
 
-- [Documentation](https://www.lexion.ai/integrations/api)
-- [OpenAPI](openapi/lexion-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/lexion.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/lexion.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Published plans, tiers and prices.
 
-### Lexion Extraction & Insights
+- [Lexion Plans Pricing](https://apis.io/plans/lexion/lexion-plans-pricing/)
 
-AI-based extraction of clauses, key terms, renewal dates, and contract insights, plus AI Contract Assist for review against playbooks. Surfaced through the Lexion product and its enterprise integration API; no openly documented public extraction endpoints are published.
+#### Rate limits (1)
 
-- **Human URL:** [https://www.lexion.ai/integrations/api](https://www.lexion.ai/integrations/api)
+Published request limits.
 
-#### Tags
+- [Lexion Rate Limits](https://apis.io/rate-limits/lexion/lexion-rate-limits/)
 
-- AI
-- Extraction
-- Insights
+#### FinOps (1)
 
-#### Properties
+What the API costs to run, by operation.
 
-- [Documentation](https://www.lexion.ai/integrations/api)
-- [OpenAPI](openapi/lexion-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/lexion.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/lexion.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Lexion Finops](https://apis.io/finops/lexion/lexion-finops/)
 
-### Lexion Workflows
+## Where to find this API
 
-No-code intake, approval, document-generation, and routing workflows, with email-, Slack-, and Microsoft Teams-driven request submission. Workflow automation is configured in-product; no openly documented public workflow API surface is published.
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- **Human URL:** [https://www.lexion.ai/integrations/api](https://www.lexion.ai/integrations/api)
-
-#### Tags
-
-- Workflow
-- Intake
-- Automation
-
-#### Properties
-
-- [Documentation](https://www.lexion.ai/integrations/api)
-- [OpenAPI](openapi/lexion-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/lexion.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/lexion.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Lexion Integrations
-
-Pre-built connectors for Email, Microsoft Word, Salesforce, HubSpot, Slack, Microsoft Teams, Coupa, NetSuite, and DocuSign, plus a custom integration API for connecting Lexion to other business systems. The custom API is enterprise and sales-led, without a published self-serve developer reference.
-
-- **Human URL:** [https://www.lexion.ai/integrations/api](https://www.lexion.ai/integrations/api)
-
-#### Tags
-
-- Integrations
-- Salesforce
-- DocuSign
-
-#### Properties
-
-- [Documentation](https://www.lexion.ai/integrations/api)
-- [OpenAPI](openapi/lexion-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/lexion.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/lexion.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/lexion)
 - [Website](https://www.lexion.ai)
 - [Documentation](https://www.lexion.ai/integrations/api)
-- [Plans](plans/lexion-plans-pricing.yml)
-- [Rate Limits](rate-limits/lexion-rate-limits.yml)
-- [Fin Ops](finops/lexion-finops.yml)
+- [Blog](https://www.lexion.ai/blog)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 16.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 23.3 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 13.2 |
+
+**Agent readiness 13.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.0** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lexion/](https://apis.io/providers/lexion/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Lexion: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lexion/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
